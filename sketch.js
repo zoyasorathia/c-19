@@ -146,22 +146,23 @@ function draw() {
     redCG.setLifetimeEach(-1);
     
      if(keyDown("UP_ARROW")) {
-      reset;
+    reset();
      }
 
      //if(key("UP_ARROW")) {
       //reset();
-    // }
+    //}
 
      //if(keyDown()) {
-      //reset();
+     // reset();
      //}
 
-     if(keyDown("UP_ARROW")) {
-       reset();
-    }
+     //if(keyDown("UP_ARROW")) {
+     //  reset();
+    //}
 }
 }
+
 
 function pinkCyclists(){
         player1 =createSprite(1100,Math.round(random(50, 250)));
@@ -190,43 +191,43 @@ function redCyclists(){
         redCG.add(player3);
 }
 
-function reset(){
-  gameState = END;
- gameOver.visible = false;
- mainCyclist.addAnimation("SahilRunning",mainRacerImg1);
-  
-  pinkCG.destroyEach();
-  yellowCG.destroyEach();
- redCG.destroyEach();
-  
- distance = 0;
-}
-
-function reset(){
-  gameState = PLAY;
-  gameOver.visible = true;
- mainCyclist.addAnimation("SahilRunning",mainRacerImg1);
-  
-  pinkCG.destroy();
- yellowCG.destroy();
-  redCG.destroy();
-  
- distance = 0;
- }
-
-//function reset()
-  //gameState = PLAY;
+//function reset(){
+ // gameState = END;
  //gameOver.visible = false;
- // mainCyclist.addAnimation("SahilRunning",mainRacerImg1);
+// mainCyclist.addAnimation("SahilRunning",mainRacerImg1);
   
- //pinkCG.destroyEach();
-//yellowCG.destroyEach();
+ // pinkCG.destroyEach();
+ // yellowCG.destroyEach();
  //redCG.destroyEach();
+  
+ //distance = 0;
+//}
+
+//function reset(){
+ // gameState = PLAY;
+ // gameOver.visible = true;
+ //mainCyclist.addAnimation("SahilRunning",mainRacerImg1);
+  
+  //pinkCG.destroy();
+ //yellowCG.destroy();
+  //redCG.destroy();
   
  //distance = 0;
  //}
 
-//function reset()
+function reset(){
+  gameState = PLAY;
+ gameOver.visible = false;
+  mainCyclist.addAnimation("SahilRunning",mainRacerImg1);
+  
+ pinkCG.destroyEach();
+ yellowCG.destroyEach();
+ redCG.destroyEach();
+  
+ distance = 0;
+ }
+
+//function reset(){
   //gameState = END;
  //gameOver.visible = true;
  //mainCyclist.addAnimation("SahilRunning",mainRacerImg1);
@@ -235,7 +236,6 @@ function reset(){
  //yellowCG.destroyEach();
  // redCG.destroyEach();
   
- //distance = 50;
-// }
-
+ //distance = 0;
+ //}
 
